@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: SpringBootStarter-Oauth-Vite-BasicSetup
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 139329290431-j6ht9t6plonj6m28ahb3536umrr3fj1p.apps.googleusercontent.com
+            client-secret: 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
+          github:
+            client-id: 4736a5bc39f517ec71d3
+            client-secret: 2a5a59de633f484b9c858c1245e0e651bcfa00e7
+    user:
+      name: test
+      password: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/my_database
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+server:
+  port: 9000
+
